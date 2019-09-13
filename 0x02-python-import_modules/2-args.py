@@ -10,4 +10,4 @@ if __name__ == "__main__":
     for x in range(len(sys.argv)):
         if x > 0:
             print('{}:'.format(x), str(sys.argv[x]))
-            x = x + 1   
+            x = x + 1
