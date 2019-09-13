@@ -7,18 +7,14 @@ if __name__ == "__main__":
         sys.exit(1)
     a = int(sys.argv[1])
     b = int(sys.argv[3])
-    if (sys.argv[2] == '+'):
+    if sys.argv[2] == '+':
         print("{} + {} = {}".format(a, b, add(a, b)))
-        sys.exit (0)
-    elif (sys.argv[2] == '-'):
+    elif sys.argv[2] == '-':
         print("{} - {} = {}".format(a, b, sub(a, b)))
-        sys.exit (0)
-    elif (sys.argv[2] == '*'):
+    elif sys.argv[2] == '*':
         print("{} * {} = {}".format(a, b, mul(a, b)))
-        sys.exit (0)
-    elif (sys.argv[2] == '/'):
+    elif sys.argv[2] == '/':
         print("{} / {} = {}".format(a, b, div(a, b)))
-        sys.exit (0)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit (1)
