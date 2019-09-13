@@ -10,4 +10,3 @@ if __name__ == "__main__":
                 res = res + int(sys.argv[i])
 
         print("{}".format(res))
-            
