@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 def mul(num):
     return num * 2
 
