@@ -4,7 +4,7 @@ def uniq_add(my_list=[]):
     if my_list is None:
         return suma
     else:
-        mylist = list(set(my_list))        
+        mylist = list(set(my_list))
         for i in mylist:
             suma = suma + i
         return suma
