@@ -6,5 +6,5 @@ def square_matrix_simple(matrix=[]):
         new = []
         for i in matrix:
             my_list = list(map((lambda x: x ** 2), i))
-            new.append(my_list)    
+            new.append(my_list)
         return (new)
