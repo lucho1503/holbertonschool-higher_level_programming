@@ -5,8 +5,8 @@ test function add_integer
 11
 >>> test(98,)
 196
->>> test(-3.6, 3.9)
-0
+>>> test(-2, 3.9)
+1
 >>> test("culo", 1024)
 Traceback (most recent call last):
 TypeError: a must be an integer
