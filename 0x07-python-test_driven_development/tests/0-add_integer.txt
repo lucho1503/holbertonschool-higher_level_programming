@@ -9,13 +9,13 @@ test function add_integer
 0
 >>> test("culo", 1024)
 Traceback (most recent call last):
-TypeError: a must be a integer
+TypeError: a must be an integer
 >>> test(512, "nea")
 Traceback (most recent call last):
-TypeError: b must be a integer
+TypeError: b must be an integer
 >>> test(False, 98)
 Traceback (most recent call last):
-TypeError: a must be a integer
+TypeError: a must be an integer
 >>> test(,69)
 Traceback (most recent call last):
 SyntaxError: invalid syntax
