@@ -11,6 +11,8 @@ def matrix_divided(matrix, div):
     for i in range(len(matrix)):
         new_matrix.append([])
         for j in range(len(matrix[i])):
+            if type(matrix[i]) is not list:
+                raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
             if len(matrix[i]) != lenght:
                 raise TypeError('Each row of the matrix must have the same size')
             if type(matrix[i][j]) is not int and type(matrix[i][j]) != float:
