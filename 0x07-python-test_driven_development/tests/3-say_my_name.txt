@@ -5,10 +5,10 @@ test 3-say_my_name
 >>> test("luis", "moreno")
 My name is luis moreno
 >>> test(92, "moreno")
-Traceback(most recent call last):
-    TypeError: first_name must be a string
+Traceback (most recent call last):
+TypeError: first_name must be a string
 >>> test("luis", 98)
-Traceback(most recent call last):
-    TypeError: last_name must be a string
+Traceback (most recent call last):
+TypeError: last_name must be a string
 >>> test("luis")
 My name is luis 
