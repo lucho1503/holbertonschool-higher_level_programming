@@ -4,7 +4,7 @@ class Rectangle:
 
     def __str__(self):
         if self.width is 0 or self.height is 0:
-            return None
+            return ("")
         else:
             has = '#' * self.width + '\n'
             has = has * self.height
