@@ -2,14 +2,6 @@
 class Rectangle:
     pass
 
-    def __str__(self):
-        if self.width is 0 or self.height is 0:
-            return ("")
-        else:
-            has = '#' * self.width + '\n'
-            has = has * self.height
-            return has[:-1]
-
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -45,3 +37,11 @@ class Rectangle:
         if self.width is 0 or self.height is 0:
             return 0
         return (self.width * 2) + (self.height * 2)
+
+    def __str__(self):
+        if self.width is 0 or self.height is 0:
+            return ("")
+        else:
+            has = '#' * self.width + '\n'
+            has = has * self.height
+            return has[:-1]
