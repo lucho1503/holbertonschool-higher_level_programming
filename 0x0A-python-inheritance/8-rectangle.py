@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 class BaseGeometry:
     def area(self):
         raise Exception('area() is not implemented')
@@ -8,6 +8,7 @@ class BaseGeometry:
             raise TypeError(name + ' must be an integer')
         if value <= 0:
             raise ValueError(name + ' must be greater than 0')
+
 
 class Rectangle(BaseGeometry):
     def __init__(self, width, height):
