@@ -7,7 +7,7 @@ def read_lines(filename="", nb_lines=0):
         else:
             n = 0
             for line in f:
-                print(line)
+                print(line, end="")
                 n = n + 1
                 if n == nb_lines:
                     break
