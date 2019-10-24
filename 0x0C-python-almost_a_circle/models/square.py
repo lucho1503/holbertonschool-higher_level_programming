@@ -33,7 +33,7 @@ class Square(Rectangle):
         if args is not None and len(args) is not 0:
             arg_ret = ['id', 'size', 'x', 'y']
             for i in range(len(args)):
-                setattr(self, arg_get[i], args[i]
+                setattr(self, arg_get[i], args[i])
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
@@ -43,8 +43,5 @@ class Square(Rectangle):
         dicc = ['id', 'size', 'x', 'y']
         v = {}
         for k in dicc:
-            if key == 'size':
-                v[k] = getattr(self, 'width')
-            else:
-                v[k] = getattr(self, k)
+            v[k] = getattr(self, k)
         return v
