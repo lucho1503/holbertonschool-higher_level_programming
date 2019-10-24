@@ -33,10 +33,18 @@ class Square(Rectangle):
         if args is not None and len(args) is not 0:
             arg_ret = ['id', 'size', 'x', 'y']
             for i in range(len(args)):
-                setattr(self, arg_get[i], args[i])
+                if arg_ret == 'size':
+                    setattr(self, 'width', args[i]
+                    setattr(self, 'height', args[i]
+                else:
+                    setattr(self, arg_get[i], args[i])
         else:
             for key, value in kwargs.items():
-                setattr(self, key, value)
+                if key == 'size':
+                    setattr(self, 'width', value)
+                    setattr(self, 'height', value)
+                else:
+                    setattr(self, key, value)
 
     def to_dictionary(self):
         """ return the representation of a dictionary """
