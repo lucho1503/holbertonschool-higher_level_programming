@@ -50,9 +50,9 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """ return a instanse with all already set """
-        if __name__ == "Square":
-            dogo = cls(width=19, height=92)
+        if cls.__name__ == "Rectangle":
+            dogo = cls(19, 92)
         else:
-            dogo = cls(92, 19)
+            dogo = cls(92)
         dogo.update(**dictionary)
         return dogo
