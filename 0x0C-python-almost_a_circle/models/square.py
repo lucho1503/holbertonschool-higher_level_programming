@@ -17,6 +17,7 @@ class Square(Rectangle):
         id_dog = "({}) ".format(self.id)
         x_y_dog = "{}/{} - ".format(self.x, self.y)
         size_dog = "{}/{}".format(self.width, self.height)
+
         return "[Square] " + id_dog + x_y_dog + size_dog
 
     @property
