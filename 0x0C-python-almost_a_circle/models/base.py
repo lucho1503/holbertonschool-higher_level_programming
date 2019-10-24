@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-
+"""
+class Base - this class will be the base of all other classes in this project.
+"""
 import json
 
 
 class Base:
-
+    """ class Base """
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """ inizializate id and incremented __nb_onjects """
         if id is not None:
             self.id = id
         else:
@@ -16,6 +19,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """ return the representation string of a JSON """
         if list_dictionaries is None:
             return "[]"
         else:
@@ -23,6 +27,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """ write the representation of string JSON in a file .json"""
         my_list = []
         if list_objs is None:
             my_list = []
@@ -35,6 +40,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """ return the list of the representation of string JSON """
         my_list = []
         if json_string is None:
             return my_list
@@ -43,6 +49,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """ return a instanse with all already set """
         if __name__ == "Square":
             dogo = cls(width=19, height=92)
         else:
