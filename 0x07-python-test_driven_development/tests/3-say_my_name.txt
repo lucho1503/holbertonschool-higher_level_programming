@@ -1,0 +1,16 @@
+test 3-say_my_name
+
+>>> test = __import__('3-say_my_name').say_my_name
+
+>>> test("Jhon", "Smith")
+My name is Jhon Smith
+>>> test("Walter", "White")
+My name is Walter White
+>>> test(12, "White")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> test("luis", 98)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+>>> test("Bob")
+My name is Bob 

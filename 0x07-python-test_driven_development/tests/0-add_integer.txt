@@ -1,0 +1,24 @@
+test add_integer
+
+>>> test = __import__('0-add_integer').add_integer
+>>> test(9, 2)
+11
+>>> test(-2, 3.9)
+1
+>>> test("culo", 1024)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> test(512, "nea")
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> test(98,)
+196
+>>> test(False,98)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> test(,69)
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+>>> test (3,6,9)
+Traceback (most recent call last):
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given

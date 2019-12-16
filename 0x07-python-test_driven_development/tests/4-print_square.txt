@@ -1,0 +1,18 @@
+test 4-print_square
+
+>>> test = __import__('4-print_square').print_square
+
+>>> test(4)
+####
+####
+####
+####
+>>> test(-7)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+>>> test(-2.0)
+Traceback (most recent call last):
+TypeError: size must be an integer
+>>> test("locu")
+Traceback (most recent call last):
+TypeError: size must be an integer
