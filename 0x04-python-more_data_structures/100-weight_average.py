@@ -10,4 +10,4 @@ def weight_average(my_list=[]):
         div_1 = 0
     for num in milist:
         div_1 += num
-    return div_0 /div_1
+    return div_0 / div_1
