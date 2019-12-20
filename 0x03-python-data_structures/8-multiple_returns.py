@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if sentence is None:
-        my_tu = (0, None)
+    size = len(sentence)
+    if size != 0:
+        b = sentence[0]
     else:
-        my_tu = (len(sentence), sentence[0])
-    return my_tu
+        b = None
+    return (size, b)
