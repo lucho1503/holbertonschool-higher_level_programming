@@ -15,7 +15,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     hel = sessionmaker(bind=engine)
     i_hel = hel()
-    sta_city = i_hel.query(State).outerjoin(City).order_by(State.id, City.id ).all()
+    sta_city = i_hel.query(State).outerjoin(City).order_by(State.id,
+                                                           City.id).all()
 
     for state in sta_city:
         print("{}: {}".format(state.id, state.name))
