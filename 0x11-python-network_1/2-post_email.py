@@ -2,8 +2,8 @@
 """ this scirpt sends a request and takes a email as argument """
 
 import sys
+import urllib.parse
 import urllib.request
-import urllib
 
 
 if __name__ == "__main__":
@@ -13,4 +13,4 @@ if __name__ == "__main__":
     data = data.encode('ascii')
     url = urllib.request.Request(sys.argv[1], data)
     with urllib.request.urlopen(url) as fi:
-        print (str(fi.read(), 'utf-8'))
+        print(str(fi.read(), 'utf-8'))
