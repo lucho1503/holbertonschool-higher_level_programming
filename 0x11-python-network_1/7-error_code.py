@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" this script sends a request to the url and display the body """
 
 import requests
 from requests.exceptions import HTTPError
