@@ -1,24 +1,22 @@
 #!/usr/bin/node
 
 const request = require('request');
-
-const url = 'http://swapi.co/api/films/';
+const url = process.argv[2];
+const match = 'https://swapi.co/api/people/18/';
 let count = 0;
 
-request(url, function (err, response, body) {
-  const res = (JSON.parse(body).results);
-
+request.get(url, (err, response, body) => {
   if (err) {
     console.log(err);
   }
-  for (let i = 0; i < res.length; i++) {
-    const ch = res[i].characters;
 
-    for (let j = 0; j < ch.length; j++) {
-      if (ch[j].includes('/18/')) {
-        count = count + 1;
-      }
+  const res = JSON.parse(body);
+
+  for (const i in res.results) {
+    if (res.results[i].characters.includes(match)) {
+      count++;
     }
   }
+
   console.log(count);
 });
