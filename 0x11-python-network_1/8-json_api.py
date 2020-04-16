@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 # this script sends a POST reqeusts with a letter as a parametersimport sys
 
-
+import sys
 import requests
+
 if __name__ == "__main__":
 
     if len(sys.argv) > 1:
