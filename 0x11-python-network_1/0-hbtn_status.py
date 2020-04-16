@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# this script fetches a request and displayed the body response
+""" this script fetches a request and displayed the body response """
 
 
 import urllib.request
