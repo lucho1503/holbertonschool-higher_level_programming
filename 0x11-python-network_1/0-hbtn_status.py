@@ -2,9 +2,9 @@
 # this script fetches a request and displayed the body response
 
 
-from urllib import request
+import urllib.request
 
-with request.urlopen('https://intranet.hbtn.io/status') as resp:
+with urllib.request.urlopen('https://intranet.hbtn.io/status') as resp:
     response = resp.read()
     print('Body response:\n\t- type: {}\n\t'
           '- content: {}\n\t- utf-8 content: {}'.
