@@ -23,6 +23,6 @@ if __name__ == "__main__":
             if author:
                 name = author.get('name')
 
-            print('{}: {}'.format(sha, name))
+            print("{}: {}".format(sha, name))
     except ValueError:
         pass
