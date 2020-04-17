@@ -14,7 +14,7 @@ if __name__ == "__main__":
     res = get(url)
     res_json = res.json()
     try:
-        for i in res_json:
+        for i in res_json[:10]:
             sha = i.get('sha')
             commit = i.get('commit')
 
