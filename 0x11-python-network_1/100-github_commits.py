@@ -13,12 +13,16 @@ if __name__ == "__main__":
     url = "https://api.github.com/repos/{}/{}/commits".format(user, owner)
     res = get(url)
     res_json = res.json()
-    for i in res_json:
-        sha = i.get('sha')
-        commit = i.get('commit')
+    try:
+        for i in res_json:
+            sha = i.get('sha')
+            commit = i.get('commit')
 
-        if commit:
-            author = commit.get('author')
-        if author:
-            name = author.get('name')
+            if commit:
+                author = commit.get('author')
+            if author:
+                name = author.get('name')
+
             print('{}: {}'.format(sha, name))
+    except:
+        pass
