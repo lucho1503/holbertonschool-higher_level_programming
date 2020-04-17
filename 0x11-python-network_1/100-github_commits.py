@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     user = sys.argv[1]
     owner = sys.argv[2]
-    url = "https://api.github.com/repos/{}/{}/commits".format(user, owner)
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(user, owner)
     res = get(url)
     res_json = res.json()
     try:
@@ -24,5 +24,5 @@ if __name__ == "__main__":
                 name = author.get('name')
 
             print('{}: {}'.format(sha, name))
-    except:
+    except ValueError:
         pass
