@@ -12,8 +12,8 @@ if __name__ == "__main__":
     owner = sys.argv[2]
     url = 'https://api.github.com/repos/{}/{}/commits'.format(user, owner)
     res = get(url)
-    res_json = res.json()
     try:
+        res_json = res.json()
         for i in res_json[:10]:
             sha = i.get('sha')
             commit = i.get('commit')
