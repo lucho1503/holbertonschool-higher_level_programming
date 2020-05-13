@@ -6,7 +6,7 @@ const url = 'https://swapi-api.hbtn.io/api/people/18/';
 
 let count = 0;
 
-request(match, function (err, resp, body) {
+request.get(match, function (err, resp, body) {
   if (err) {
     console.log(err);
   }
