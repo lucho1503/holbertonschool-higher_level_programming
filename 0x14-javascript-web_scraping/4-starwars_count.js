@@ -12,7 +12,7 @@ request.get(match, function (err, resp, body) {
   }
 
   const res = JSON.parse(body);
-  for (const i in res.results) {
+  for (let i in res.results) {
     if (res.results[i].characters.includes(url)) {
       count++;
     }
